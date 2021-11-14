@@ -1,0 +1,697 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://player/HandMesh.gd" type="Script" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 0.07, 0.02, 0.07 )
+
+[sub_resource type="CubeMesh" id=2]
+size = Vector3( 0.016, 0.016, 0.02 )
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 0.016, 0.016, 0.023 )
+
+[sub_resource type="CubeMesh" id=4]
+size = Vector3( 0.016, 0.016, 0.025 )
+
+[sub_resource type="CubeMesh" id=5]
+size = Vector3( 0.017, 0.017, 0.023 )
+
+[sub_resource type="CubeMesh" id=6]
+size = Vector3( 0.033, 0.02, 0.02 )
+
+[sub_resource type="CubeMesh" id=7]
+size = Vector3( 0.025, 0.02, 0.02 )
+
+[sub_resource type="Animation" id=8]
+resource_name = "Grab"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pinky:transform")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 0.984103, 0, 0.1776, -0.100867, 0.823067, 0.558916, -0.146177, -0.567944, 0.809982, -0.0264515, 0, -0.0351736 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pinky/Spatial:transform")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 0.851645, 0.52412, 0, -0.52412, 0.851645, 0, 0, -0.022 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pinky/Spatial/Spatial:transform")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 0.561592, 0.827414, 0, -0.827414, 0.561592, 0, 0, -0.022 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ring:transform")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 0.998104, -3.72529e-09, 0.0615537, -0.0333089, 0.840935, 0.54011, -0.0517627, -0.541136, 0.839341, -0.00960867, 0, -0.035 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ring/Spatial:transform")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 0.795717, 0.605669, 0, -0.605669, 0.795717, 0, -1.86265e-09, -0.024 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ring/Spatial/Spatial:transform")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 0.516563, 0.856249, 0, -0.856249, 0.516563, 0, 0, -0.024 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Middle:transform")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 0.996805, 0, -0.0798684, 0.0400874, 0.864915, 0.500315, 0.0690794, -0.501918, 0.862152, 0.00799063, 0, -0.035 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Middle/Spatial:transform")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 1.86265e-09, 0, 0.763278, 0.646071, 0, -0.646071, 0.763278, 4.65661e-10, 0, -0.026 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Middle/Spatial/Spatial:transform")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 3.72529e-09, 0, 0.41931, 0.907843, 5.58794e-09, -0.907843, 0.41931, -4.65661e-10, 0, -0.026 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Index:transform")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 0.991565, 0.0785793, -0.103072, 0, 0.795251, 0.60628, 0.129609, -0.601166, 0.788544, 0.0259081, 0, -0.035 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Index/Spatial:transform")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 7.45058e-09, -7.45058e-09, -7.45058e-09, 0.800679, 0.599093, 0, -0.599093, 0.800679, -1.86265e-09, 1.86265e-09, -0.024 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Index/Spatial/Spatial:transform")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, -7.45058e-09, 7.45058e-09, -7.45058e-09, 0.484016, 0.875059, -3.72529e-09, -0.875059, 0.484016, 1.86265e-09, 0, -0.024 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Thumb:transform")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 0.582038, 0, 0.813162, 0, 1, 0, -0.813162, 0, 0.582038, 0.0349277, 0, 0.0245734 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Thumb/Spatial:transform")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "OpenHand"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pinky:transform")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0264515, 0, -0.0351736 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pinky/Spatial:transform")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.022 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pinky/Spatial/Spatial:transform")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.022 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ring:transform")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00960867, 0, -0.035 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ring/Spatial:transform")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ring/Spatial/Spatial:transform")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Middle:transform")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00799063, 0, -0.035 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Middle/Spatial:transform")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Middle/Spatial/Spatial:transform")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Index:transform")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0259081, 0, -0.035 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Index/Spatial:transform")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Index/Spatial/Spatial:transform")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Thumb:transform")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 0.582038, 0, 0.813162, 0, 1, 0, -0.813162, 0, 0.582038, 0.0349277, 0, 0.0245734 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Thumb/Spatial:transform")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pinky:transform")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0264515, 0, -0.0351736 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pinky/Spatial:transform")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.022 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pinky/Spatial/Spatial:transform")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.022 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ring:transform")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00960867, 0, -0.035 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ring/Spatial:transform")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ring/Spatial/Spatial:transform")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Middle:transform")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00799063, 0, -0.035 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Middle/Spatial:transform")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Middle/Spatial/Spatial:transform")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Index:transform")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0259081, 0, -0.035 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Index/Spatial:transform")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Index/Spatial/Spatial:transform")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Thumb:transform")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 0.582038, 0, 0.813162, 0, 1, 0, -0.813162, 0, 0.582038, 0.0349277, 0, 0.0245734 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Thumb/Spatial:transform")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0 ) ]
+}
+
+[sub_resource type="AnimationNodeBlend2" id=11]
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "Grab"
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "OpenHand"
+
+[sub_resource type="AnimationNodeBlendTree" id=14]
+nodes/Blend2/node = SubResource( 11 )
+nodes/Blend2/position = Vector2( 500, 60 )
+nodes/Grab/node = SubResource( 12 )
+nodes/Grab/position = Vector2( 240, 160 )
+nodes/OpenHand/node = SubResource( 13 )
+nodes/OpenHand/position = Vector2( 240, 40 )
+nodes/output/position = Vector2( 720, 60 )
+node_connections = [ "output", 0, "Blend2", "Blend2", 0, "OpenHand", "Blend2", 1, "Grab" ]
+
+[node name="HandMesh" type="MeshInstance"]
+mesh = SubResource( 1 )
+material/0 = null
+script = ExtResource( 1 )
+
+[node name="Pinky" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0264515, 0, -0.0351736 )
+
+[node name="Mesh" type="MeshInstance" parent="Pinky"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.012 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Pinky"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.022 )
+
+[node name="Mesh" type="MeshInstance" parent="Pinky/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.012 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Pinky/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.022 )
+
+[node name="Mesh" type="MeshInstance" parent="Pinky/Spatial/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.012 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Ring" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00960867, 0, -0.035 )
+
+[node name="Mesh" type="MeshInstance" parent="Ring"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.013 )
+mesh = SubResource( 3 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Ring"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 )
+
+[node name="Mesh" type="MeshInstance" parent="Ring/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.013 )
+mesh = SubResource( 3 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Ring/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 )
+
+[node name="Mesh" type="MeshInstance" parent="Ring/Spatial/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.013 )
+mesh = SubResource( 3 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Middle" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00799063, 0, -0.035 )
+
+[node name="Mesh" type="MeshInstance" parent="Middle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.014 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Middle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026 )
+
+[node name="Mesh" type="MeshInstance" parent="Middle/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.014 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Middle/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026 )
+
+[node name="Mesh" type="MeshInstance" parent="Middle/Spatial/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.014 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Index" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0259081, 0, -0.035 )
+
+[node name="Mesh" type="MeshInstance" parent="Index"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.013 )
+mesh = SubResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Index"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 )
+
+[node name="Mesh" type="MeshInstance" parent="Index/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.013 )
+mesh = SubResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Index/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.024 )
+
+[node name="Mesh" type="MeshInstance" parent="Index/Spatial/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.013 )
+mesh = SubResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Thumb" type="Spatial" parent="."]
+transform = Transform( 0.582038, 0, 0.813162, 0, 1, 0, -0.813162, 0, 0.582038, 0.0349277, 0, 0.0245734 )
+
+[node name="Mesh" type="MeshInstance" parent="Thumb"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018, 0, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Thumb"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Thumb/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014, 0, 0 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Grab = SubResource( 8 )
+anims/OpenHand = SubResource( 9 )
+anims/RESET = SubResource( 10 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 14 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/Blend2/blend_amount = 0.0

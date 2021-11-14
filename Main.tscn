@@ -1,0 +1,78 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://level/Mountain.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Main.gd" type="Script" id=3]
+[ext_resource path="res://level/HandHeld.tscn" type="PackedScene" id=4]
+
+[sub_resource type="ProceduralSky" id=1]
+ground_bottom_color = Color( 0.686275, 0.870588, 0.941176, 1 )
+sun_longitude = 180.0
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+ambient_light_color = Color( 0.364706, 0.364706, 0.364706, 1 )
+ambient_light_sky_contribution = 0.2
+tonemap_mode = 3
+tonemap_white = 6.57
+
+[node name="Main" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+
+[node name="Mountain" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.955263, 0, -0.295758, 0, 1, 0, 0.295758, 0, 0.955263, 0, -0.591387, 2.45599 )
+
+[node name="HandHelds" type="Spatial" parent="Mountain"]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -8.34465e-07, 0, -2.6226e-06 )
+
+[node name="HandHeld01" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.794436, 0, 0.607348, 0, 1, 0, -0.607348, 0, 0.794436, -0.943271, 1.36957, -3.05975 )
+
+[node name="HandHeld02" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.794436, 0, 0.607348, 0, 1, 0, -0.607348, 0, 0.794436, -1.39906, 1.70593, -2.84253 )
+
+[node name="HandHeld03" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.794436, 0, 0.607348, 0, 1, 0, -0.607348, 0, 0.794436, -0.965372, 2.21059, -3.0301 )
+
+[node name="HandHeld04" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.794436, 0, 0.607348, 0, 1, 0, -0.607348, 0, 0.794436, -1.59707, 2.60345, -2.79652 )
+
+[node name="HandHeld05" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.794436, 0, 0.607348, 0, 1, 0, -0.607348, 0, 0.794436, -1.20901, 3.20775, -3.04737 )
+
+[node name="HandHeld06" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.889432, 0, 0.457067, 0, 1, 0, -0.457067, 0, 0.889432, -1.83244, 3.78627, -2.82693 )
+
+[node name="HandHeld07" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.956392, 0, 0.292088, 0, 1, 0, -0.292088, 0, 0.956392, -1.21244, 4.66406, -2.90841 )
+
+[node name="HandHeld08" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.978314, 0, 0.207126, 0, 1, 0, -0.207126, 0, 0.978314, -1.74291, 5.15306, -2.89794 )
+
+[node name="HandHeld09" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.978314, 0, 0.207126, 0, 1, 0, -0.207126, 0, 0.978314, -0.775526, 5.5693, -2.91167 )
+
+[node name="HandHeld10" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.987061, 0, -0.160346, 0, 1, 0, 0.160346, 0, 0.987061, -1.54479, 6.27104, -2.89179 )
+
+[node name="HandHeld11" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.969063, 0, 0.246813, 0, 1, 0, -0.246813, 0, 0.969063, -1.32355, 7.10951, -2.75386 )
+
+[node name="HandHeld12" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.969063, 0, 0.246813, 0, 1, 0, -0.246813, 0, 0.969063, -1.87637, 7.461, -2.81402 )
+
+[node name="HandHeld13" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.969063, 0, 0.246813, 0, 1, 0, -0.246813, 0, 0.969063, -1.85772, 8.05458, -2.74078 )
+
+[node name="HandHeld14" parent="Mountain/HandHelds" instance=ExtResource( 4 )]
+transform = Transform( 0.969063, 0, 0.246813, 0, 1, 0, -0.246813, 0, 0.969063, -2.48582, 8.16987, -2.81184 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="WorldEnvironment"]
+transform = Transform( 1, 0, 0, 0, 0.819152, 0.573577, 0, -0.573577, 0.819152, 0, 57.0871, 38.0929 )
+shadow_enabled = true

@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" load_steps=8 format=2]
+
+[ext_resource path="res://assets/ambientcg.com/Rock24/Rock024_2K_Color.jpg" type="Texture" id=1]
+[ext_resource path="res://materials/mountain.shader" type="Shader" id=2]
+[ext_resource path="res://assets/ambientcg.com/Ground037/Ground037_2K_Color.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/ambientcg.com/Rock24/Rock024_2K_NormalGL.jpg" type="Texture" id=4]
+[ext_resource path="res://assets/ambientcg.com/Ground037/Ground037_2K_NormalGL.jpg" type="Texture" id=5]
+[ext_resource path="res://assets/ambientcg.com/Rock24/Rock024_2K_Roughness.jpg" type="Texture" id=6]
+[ext_resource path="res://assets/ambientcg.com/Ground037/Ground037_2K_Roughness.jpg" type="Texture" id=7]
+
+[resource]
+shader = ExtResource( 2 )
+shader_param/uv_blend_sharpness = 1.0
+shader_param/uv1_scale = Vector3( 0.1, 0.1, 0.1 )
+shader_param/uv1_offset = Vector3( 0, 0, 0 )
+shader_param/uv2_scale = Vector3( 0.3, 0.3, 0.3 )
+shader_param/uv2_offset = Vector3( 0, 0, 0 )
+shader_param/texture_albedo_1 = ExtResource( 1 )
+shader_param/texture_albedo_2 = ExtResource( 3 )
+shader_param/texture_roughness_1 = ExtResource( 6 )
+shader_param/texture_roughness_2 = ExtResource( 7 )
+shader_param/texture_normal_1 = ExtResource( 4 )
+shader_param/texture_normal_2 = ExtResource( 5 )

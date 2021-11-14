@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 0.1, 0.2, 0.2 )
+
+[node name="HandMesh" type="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, -0.1, 0.1 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../../LeftHandController")
+material/0 = null

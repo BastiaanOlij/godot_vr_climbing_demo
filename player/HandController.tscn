@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://player/HandDetector.tscn" type="PackedScene" id=1]
+[ext_resource path="res://player/HandController.gd" type="Script" id=2]
+
+[node name="HandController" type="ARVRController"]
+script = ExtResource( 2 )
+
+[node name="HandAnchor" type="Spatial" parent="."]
+transform = Transform( -4.37114e-08, -1, 0, 0.707107, -3.09086e-08, 0.707107, -0.707107, 3.09086e-08, 0.707107, 0, -0.1, 0.1 )
+
+[node name="HandDetector" parent="." instance=ExtResource( 1 )]
+
+[connection signal="body_entered" from="HandDetector" to="." method="_on_handheld_entered"]
+[connection signal="body_exited" from="HandDetector" to="." method="_on_handheld_exited"]

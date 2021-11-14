@@ -1,0 +1,153 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://level/Rock.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/rocks/rock02.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/ambientcg.com/Rock24/Rock24.tres" type="Material" id=3]
+[ext_resource path="res://assets/rocks/mountain.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://assets/ambientcg.com/Ground026/Ground026_2K_Color.jpg" type="Texture" id=6]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 6 )
+uv1_scale = Vector3( 20, 20, 20 )
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 5000, 5000 )
+subdivide_width = 10
+subdivide_depth = 10
+
+[sub_resource type="SpatialMaterial" id=3]
+flags_unshaded = true
+albedo_color = Color( 0.686275, 0.870588, 0.941176, 1 )
+
+[node name="Mountain" type="Spatial"]
+
+[node name="Up2" type="Spatial" parent="."]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 30, 0 )
+
+[node name="Rock15" parent="Up2" instance=ExtResource( 1 )]
+transform = Transform( -0.662251, 0, -0.722543, 0, 1, 0, 0.722543, 0, -0.662251, 10.6936, -0.453533, -13.0999 )
+
+[node name="Rock16" parent="Up2" instance=ExtResource( 1 )]
+transform = Transform( 0.556994, 0, -0.806475, 0, 1, 0, 0.806475, 0, 0.556994, 19.1943, -0.453533, -10.2222 )
+
+[node name="Rock22" parent="Up2" instance=ExtResource( 1 )]
+transform = Transform( -0.449002, 0, -0.87123, 0, 1, 0, 0.87123, 0, -0.449002, 26.3376, -0.453533, -6.4536 )
+
+[node name="Rock17" parent="Up2" instance=ExtResource( 1 )]
+transform = Transform( 0.569927, 0, -0.797388, 0, 1, 0, 0.797388, 0, 0.569927, -2.55786, -0.453527, -9.45046 )
+
+[node name="Rock18" parent="Up2" instance=ExtResource( 1 )]
+transform = Transform( -0.978763, 0, 0.0516546, 0, 1, 0, -0.0516546, 0, -0.978763, -8.75135, -0.453527, -12.1458 )
+
+[node name="Rock19" parent="Up2" instance=ExtResource( 1 )]
+transform = Transform( -0.557036, 0, 0.806446, 0, 1, 0, -0.806446, 0, -0.557036, -15.5894, -0.453527, -16.1248 )
+
+[node name="Rock20" parent="Up2" instance=ExtResource( 1 )]
+transform = Transform( -0.913534, 0, -0.355107, 0, 1, 0, 0.355107, 0, -0.913534, -22.5874, -0.453527, -14.8006 )
+
+[node name="Rock21" parent="Up2" instance=ExtResource( 1 )]
+transform = Transform( -0.975045, 0, 0.0996605, 0, 1, 0, -0.0996605, 0, -0.975045, 3.79961, -0.453533, -10.7686 )
+
+[node name="Up1" type="Spatial" parent="."]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 10, 0 )
+
+[node name="Rock08" parent="Up1" instance=ExtResource( 1 )]
+transform = Transform( -0.994817, 0, 0.101681, 0, 1, 0, -0.101681, 0, -0.994817, 3.947, 0, -9.55716 )
+
+[node name="Rock12" parent="Up1" instance=ExtResource( 1 )]
+transform = Transform( -0.67568, 0, -0.737195, 0, 1, 0, 0.737195, 0, -0.67568, 10.9808, 0, -11.7216 )
+
+[node name="Rock13" parent="Up1" instance=ExtResource( 1 )]
+transform = Transform( 0.588082, 0, -0.808802, 0, 1, 0, 0.808802, 0, 0.588082, 20.46, 0, -6.89376 )
+
+[node name="Rock15" parent="Up1" instance=ExtResource( 1 )]
+transform = Transform( -0.783563, -1.45376e-09, 0.621311, 0.0303076, -0.99881, 0.0382223, 0.620571, 0.0487801, 0.78263, 26.0079, 0, -1.15134 )
+
+[node name="Rock09" parent="Up1" instance=ExtResource( 1 )]
+transform = Transform( 0.581484, 0, -0.813558, 0, 1, 0, 0.813558, 0, 0.581484, -2.53938, 5.72205e-06, -7.99821 )
+
+[node name="Rock10" parent="Up1" instance=ExtResource( 1 )]
+transform = Transform( -0.99861, 0, 0.0527021, 0, 1, 0, -0.0527021, 0, -0.99861, -8.85847, 5.72205e-06, -10.7481 )
+
+[node name="Rock11" parent="Up1" instance=ExtResource( 1 )]
+transform = Transform( 0.489748, -7.62208e-08, -0.871864, 0, -1, 8.74228e-08, -0.871864, -4.28151e-08, -0.489748, -15.8731, -0.167542, -13.0198 )
+
+[node name="Rock14" parent="Up1" instance=ExtResource( 1 )]
+transform = Transform( -0.932059, 0, -0.362308, 0, 1, 0, 0.362308, 0, -0.932059, -23.3181, 5.72205e-06, -16.1995 )
+
+[node name="Down1" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10, 0 )
+
+[node name="Rock01" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( 0.994785, 0, 0.101993, 0, 1, 0, -0.101993, 0, 0.994785, -0.0638755, 0, -1.57025 )
+
+[node name="Rock02" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( -0.901455, 0, 0.432872, 0, 1, 0, -0.432872, 0, -0.901455, -6.58339, 0.0744677, -2.41053 )
+
+[node name="Rock03" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( 0.246356, 0, 0.969179, 0, 1, 0, -0.969179, 0, 0.246356, -12.8596, -0.130944, -5.49131 )
+
+[node name="Rock04" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( -0.190484, -8.58221e-08, -0.98169, 0, -1, 8.74228e-08, -0.98169, 1.66526e-08, 0.190484, -18.9683, 0.107397, -7.27075 )
+
+[node name="Rock08" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( 0.121765, 0, 0.992559, 0, 1, 0, -0.992559, 0, 0.121765, -25.705, 0, -14.8826 )
+
+[node name="Rock05" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( 0.991484, 0, 0.130232, 0, 1, 0, -0.130232, 0, 0.991484, 7.35051, 0, -4.19725 )
+
+[node name="Rock06" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( -0.980053, -1.7374e-08, -0.198735, 0, -1, 8.74227e-08, -0.198735, 8.5679e-08, 0.980053, 16.1781, 0.278831, -5.71727 )
+
+[node name="Rock07" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( -0.621996, 6.84539e-08, -0.783021, 0, -1, -8.74228e-08, -0.783021, -5.43766e-08, 0.621996, 21.9117, 0.434366, -0.519995 )
+
+[node name="Rock09" parent="Down1" instance=ExtResource( 1 )]
+transform = Transform( 0.84372, 0, 0.536784, 0, 1, 0, -0.536784, 0, 0.84372, 27.6237, 0, 6.46705 )
+
+[node name="Dressup" type="Spatial" parent="."]
+
+[node name="SmallRock01" type="MeshInstance" parent="Dressup"]
+transform = Transform( 0.132054, 0, -0.482246, 0, 0.5, 0, 0.482246, 0, 0.132054, -0.200163, 0.723995, -3.65603 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="SmallRock02" type="MeshInstance" parent="Dressup"]
+transform = Transform( 0.0881524, 0.426539, -0.1502, 0, 0.233286, 0.295217, 0.321922, -0.1168, 0.0411295, 0.133277, 0.700725, -4.07092 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="SmallRock03" type="MeshInstance" parent="Dressup"]
+transform = Transform( 0.0770297, 0.486153, 0.0122994, -0.0428636, -0.00355126, 0.331001, 0.321922, -0.1168, 0.0411295, 0.739504, 0.802518, -4.45841 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="SmallRock04" type="MeshInstance" parent="Dressup"]
+transform = Transform( 0.1003, -0.465433, 0.0693635, 0.0260968, -0.0965557, -0.326449, 0.317275, 0.155079, 0.00492357, 0.633781, 0.614919, -3.78947 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="SmallRock05" type="MeshInstance" parent="Dressup"]
+transform = Transform( -0.084322, 0.372451, 0.206103, 0.0602567, -0.295349, 0.262492, 0.317275, 0.155079, 0.00492357, 0.436862, 1.08982, -4.02739 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="SmallRock06" type="MeshInstance" parent="Dressup"]
+transform = Transform( 0.16945, 0.454307, 0.0732186, 0.157956, 0.0672251, -0.281764, -0.443099, 0.197701, -0.0724432, 3.88072, 0.419823, -4.6407 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="SmallRock07" type="MeshInstance" parent="Dressup"]
+transform = Transform( -0.392585, -0.259339, -0.101505, 0.157956, 0.0672251, -0.281764, 0.266321, -0.422166, 0.0174873, 4.56157, 0.499039, -4.76143 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="Mountain" type="MeshInstance" parent="."]
+transform = Transform( 150, 0, 0, 0, 50, 0, 0, 0, 150, 0, -312.502, -290.723 )
+mesh = ExtResource( 5 )
+material/0 = SubResource( 2 )
+
+[node name="Floor" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -261.245, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 3 )

@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://level/HandHeld.gd" type="Script" id=2]
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 1, 0.796078, 0, 1 )
+
+[sub_resource type="CubeMesh" id=1]
+material = SubResource( 4 )
+size = Vector3( 0.02, 0.02, 0.1 )
+
+[sub_resource type="CubeMesh" id=2]
+size = Vector3( 0.2, 0.02, 0.02 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.592157, 0.592157, 0.592157, 1 )
+metallic = 0.39
+roughness = 0.0
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.1, 0.025, 0.060897 )
+
+[node name="HandHeld" type="StaticBody"]
+transform = Transform( 1, 0, 2.08616e-07, 0, 1, 0, -2.08616e-07, 0, 1, 0, 0, 0 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 2 )
+
+[node name="Base" type="Spatial" parent="."]
+transform = Transform( 1, 7.5797e-08, 1.42569e-08, -7.5797e-08, 0.93166, 0.363333, 1.42569e-08, -0.363333, 0.93166, 0, 0, 0 )
+
+[node name="Mesh1" type="MeshInstance" parent="Base"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.05 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Mesh2" type="MeshInstance" parent="Base/Mesh1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.35839e-09, 0, 0.0589016 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../../..")
+material/0 = SubResource( 5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.945831, 0.32466, 0, -0.32466, 0.945831, -1.02179e-08, 0.0234575, 0.0534593 )
+shape = SubResource( 3 )
+
+[node name="LeftHandAnchor" type="Spatial" parent="."]
+transform = Transform( 1, -1.93391e-07, 1.30383e-07, 1.93391e-07, 0.375011, -0.92702, 1.30383e-07, 0.92702, 0.375011, -2.42236e-08, 0.0211752, 0.134888 )
+
+[node name="RightHandAnchor" type="Spatial" parent="."]
+transform = Transform( -1, -8.74227e-08, 0, 3.27845e-08, -0.375011, -0.92702, 8.10427e-08, -0.92702, 0.375011, -2.42236e-08, 0.0211752, 0.134888 )
