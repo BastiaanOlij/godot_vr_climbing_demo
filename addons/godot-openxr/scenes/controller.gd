@@ -14,5 +14,3 @@ func _process(delta):
 		visible = false
 		print("Deactivated " + name)
 		emit_signal("deactivated")
-
-
